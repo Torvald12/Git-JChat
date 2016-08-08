@@ -63,6 +63,7 @@ public class Main extends JFrame {
     public static void main(String[] args) {
 
         Main main = new Main("JChat", 500, 500);
+        main.setExtendedState(MAXIMIZED_BOTH);
     }
 
 }
