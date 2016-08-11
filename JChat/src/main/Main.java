@@ -46,9 +46,10 @@ public class Main extends JFrame {
         JMenuItem jmiAddTalk = new JMenuItem("Add talk");
         jmFile.add(jmiAddTalk);
         jmiAddTalk.addActionListener((ActionEvent e) -> {
-            TalkProperties newTalk = new TalkProperties(this, true);
-            if (newTalk.getStatus()) {
-                jTabbedPane.addTab(newTalk.getNickName(), new TalkPanel());
+            TalkPropertiesDialog tpd = new TalkPropertiesDialog();
+
+            if (tpd.showDialog()) {
+                jTabbedPane.addTab(tpd.getTalkName(), new TalkPanel());
             }
         });
 
