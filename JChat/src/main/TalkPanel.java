@@ -11,6 +11,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -20,6 +21,7 @@ public class TalkPanel extends JPanel {
     private final JTextField jTextField;
     private final JButton jSmileButton;
     private final JPanel jSouthPanel;
+    private final JPanel jMainPanel;
     private final Font font = new Font("Times New Roman", Font.PLAIN, 24);
 
     private final static String newline = "\n";
@@ -28,12 +30,17 @@ public class TalkPanel extends JPanel {
     public TalkPanel() {
         super(new BorderLayout());
 
+        jMainPanel = new JPanel();
         jTextArea = new JTextArea();
         jTextArea.setFont(font);
         jTextArea.setEditable(false);
         jTextField = new JTextField();
         jTextField.setFont(font);
         jTextField.setPreferredSize(new Dimension(1500, 100));
+        jMainPanel.add(jTextArea);
+        
+        final JScrollPane scrollPane = new JScrollPane();
+        jMainPanel.add(scrollPane, BorderLayout.CENTER);
 
         jSmileButton = new JButton("Smiles");
         jSmileButton.setPreferredSize(new Dimension(100, 100));
@@ -108,81 +115,64 @@ public class TalkPanel extends JPanel {
                 b1.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
 
-                        String text = jTextField.getText();
-                        jTextArea.append("[" + "Torvald12" + "] " + text + " :) " + newline);
-                        jTextField.setText("");
+                        //jTextArea.append("[" + "Torvald12" + "] " + text + " :) " + newline);
+                        jTextField.setText(jTextField.getText()+":)");
                     }
                 });
                 
                 b2.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
 
-                        String text = jTextField.getText();
-                        jTextArea.append("[" + "Torvald12" + "] " + text + " :( " + newline);
-                        jTextField.setText("");
+                        jTextField.setText(jTextField.getText()+":(");
                     }
                 });
 
                 b3.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
 
-                        String text = jTextField.getText();
-                        jTextArea.append("[" + "Torvald12" + "] " + text + " :/ " + newline);
-                        jTextField.setText("");
+                        jTextField.setText(jTextField.getText()+":/");
                     }
                 });
 
                 b4.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
 
-                        String text = jTextField.getText();
-                        jTextArea.append("[" + "Torvald12" + "] " + text + " 0___0 " + newline);
-                        jTextField.setText("");
+                        jTextField.setText(jTextField.getText()+"0___0");
                     }
                 });
 
                 b5.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
 
-                        String text = jTextField.getText();
-                        jTextArea.append("[" + "Torvald12" + "] " + text + " :D " + newline);
-                        jTextField.setText("");
+                        jTextField.setText(jTextField.getText()+":D");
                     }
                 });
 
                 b6.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
 
-                        String text = jTextField.getText();
-                        jTextArea.append("[" + "Torvald12" + "] " + text + " :3 " + newline);
-                        jTextField.setText("");
+                        jTextField.setText(jTextField.getText()+":3");
                     }
                 });
 
                 b7.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
 
-                        String text = jTextField.getText();
-                        jTextArea.append("[" + "Torvald12" + "] " + text + " :* " + newline);
-                        jTextField.setText("");
+                        jTextField.setText(jTextField.getText()+":*");
                     }
                 });
 
                 b8.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
 
-                        String text = jTextField.getText();
-                        jTextArea.append("[" + "Torvald12" + "] " + text + " :P " + newline);
-                        jTextField.setText("");
+                        jTextField.setText(jTextField.getText()+":P");
                     }
                 });
 
                 b9.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent evt) {
 
-                        String text = jTextField.getText();
-                        jTextArea.append("[" + "Torvald12" + "] " + text + " :0 " + newline);
-                        jTextField.setText("");
+                        jTextField.setText(jTextField.getText()+":0");
                     }
                 });
 

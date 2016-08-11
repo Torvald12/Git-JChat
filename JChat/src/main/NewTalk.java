@@ -18,7 +18,6 @@ public class NewTalk extends javax.swing.JDialog {
 //            public void actionPerformed(ActionEvent evt) 
 //            {
 //                nick = jTextFieldNickName.getText();
-//                //System.out.print(nick+"12");
 //            }        
 //        });
           
