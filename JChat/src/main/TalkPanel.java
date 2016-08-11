@@ -113,6 +113,7 @@ public class TalkPanel extends JPanel {
                 panelSmile.add(b9);
 
                 b1.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent evt) {
 
                         //jTextArea.append("[" + "Torvald12" + "] " + text + " :) " + newline);
@@ -121,6 +122,7 @@ public class TalkPanel extends JPanel {
                 });
                 
                 b2.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent evt) {
 
                         jTextField.setText(jTextField.getText()+":(");
@@ -128,6 +130,7 @@ public class TalkPanel extends JPanel {
                 });
 
                 b3.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent evt) {
 
                         jTextField.setText(jTextField.getText()+":/");
@@ -135,6 +138,7 @@ public class TalkPanel extends JPanel {
                 });
 
                 b4.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent evt) {
 
                         jTextField.setText(jTextField.getText()+"0___0");
@@ -142,6 +146,7 @@ public class TalkPanel extends JPanel {
                 });
 
                 b5.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent evt) {
 
                         jTextField.setText(jTextField.getText()+":D");
@@ -149,6 +154,7 @@ public class TalkPanel extends JPanel {
                 });
 
                 b6.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent evt) {
 
                         jTextField.setText(jTextField.getText()+":3");
@@ -156,6 +162,7 @@ public class TalkPanel extends JPanel {
                 });
 
                 b7.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent evt) {
 
                         jTextField.setText(jTextField.getText()+":*");
@@ -163,6 +170,7 @@ public class TalkPanel extends JPanel {
                 });
 
                 b8.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent evt) {
 
                         jTextField.setText(jTextField.getText()+":P");
@@ -170,6 +178,7 @@ public class TalkPanel extends JPanel {
                 });
 
                 b9.addActionListener(new ActionListener() {
+                    @Override
                     public void actionPerformed(ActionEvent evt) {
 
                         jTextField.setText(jTextField.getText()+":0");
@@ -180,6 +189,7 @@ public class TalkPanel extends JPanel {
         });
 
         jTextField.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent evt) {
 
                 String text = jTextField.getText();

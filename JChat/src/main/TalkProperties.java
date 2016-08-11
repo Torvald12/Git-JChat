@@ -4,10 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.StringTokenizer;
 
-public class NewTalk extends javax.swing.JDialog {
+public class TalkProperties extends javax.swing.JDialog {
     public String nick;
     
-    public NewTalk(java.awt.Frame parent, boolean modal) {
+    public TalkProperties(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setVisible(true);
