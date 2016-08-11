@@ -13,7 +13,7 @@ import javax.swing.JTabbedPane;
 
 public class Main extends JFrame {
 
-    private Image im = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/img/img.jpg"));
+    private Image im = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/img/elephant.jpg"));
     private final JTabbedPane jTabbedPane = new JTabbedPane();
 
     public Main(String title, int w, int h) {
