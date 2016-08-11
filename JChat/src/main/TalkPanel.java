@@ -38,7 +38,7 @@ public class TalkPanel extends JPanel {
         jTextField.setFont(font);
         jTextField.setPreferredSize(new Dimension(1500, 100));
         jMainPanel.add(jTextArea);
-        
+
         final JScrollPane scrollPane = new JScrollPane();
         jMainPanel.add(scrollPane, BorderLayout.CENTER);
 
@@ -56,6 +56,7 @@ public class TalkPanel extends JPanel {
         add(jSouthPanel, BorderLayout.SOUTH);
 
         jSmileButton.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent e) {
 
                 JFrame windowSmile = new JFrame("Smiles");
@@ -115,73 +116,63 @@ public class TalkPanel extends JPanel {
                 b1.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent evt) {
-
-                        //jTextArea.append("[" + "Torvald12" + "] " + text + " :) " + newline);
-                        jTextField.setText(jTextField.getText()+":)");
+                        jTextField.setText(jTextField.getText() + ":)");
                     }
                 });
-                
+
                 b2.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent evt) {
-
-                        jTextField.setText(jTextField.getText()+":(");
+                        jTextField.setText(jTextField.getText() + ":(");
                     }
                 });
 
                 b3.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent evt) {
-
-                        jTextField.setText(jTextField.getText()+":/");
+                        jTextField.setText(jTextField.getText() + ":/");
                     }
                 });
 
                 b4.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent evt) {
-
-                        jTextField.setText(jTextField.getText()+"0___0");
+                        jTextField.setText(jTextField.getText() + "0___0");
                     }
                 });
 
                 b5.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent evt) {
-
-                        jTextField.setText(jTextField.getText()+":D");
+                        jTextField.setText(jTextField.getText() + ":D");
                     }
                 });
 
                 b6.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent evt) {
-
-                        jTextField.setText(jTextField.getText()+":3");
+                        jTextField.setText(jTextField.getText() + ":3");
                     }
                 });
 
                 b7.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent evt) {
-
-                        jTextField.setText(jTextField.getText()+":*");
+                        jTextField.setText(jTextField.getText() + ":*");
                     }
                 });
 
                 b8.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent evt) {
-
-                        jTextField.setText(jTextField.getText()+":P");
+                        jTextField.setText(jTextField.getText() + ":P");
                     }
                 });
 
                 b9.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent evt) {
-
-                        jTextField.setText(jTextField.getText()+":0");
+                        jTextField.setText(jTextField.getText() + ":0");
                     }
                 });
 
